@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appname_style"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/create_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:text="Created date"
+                android:textSize="10sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/create_date"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/title"
+                android:textColor="#120136"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_edit"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="false"
+                android:layout_toStartOf="@+id/btn_del"
+                app:srcCompat="@drawable/edit" />
+
+            <ImageView
+                android:id="@+id/btn_del"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                app:srcCompat="@drawable/delete" />
+
+            <TextView
+                android:id="@+id/task_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_text"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/notes"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/dead_date_text_recy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_text"
+                android:layout_marginEnd="5dp"
+                android:layout_toLeftOf="@id/deadline_text_time_recy1"
+                android:text="date"
+                android:textSize="10sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/deadline_text_time_recy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task_text"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:text="time"
+                android:textSize="10sp"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

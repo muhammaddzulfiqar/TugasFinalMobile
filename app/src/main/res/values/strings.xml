@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Todo App</string>
+    <string name="edit_task_details">Edit Task Details</string>
+    <string name="description">Description</string>
+    <string name="update">Update</string>
+    <string name="create_a_new_task">Create a New Task</string>
+    <string name="add_a_title">Add a Title</string>
+    <string name="desription">Desription</string>
+    <string name="task">Task</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Title</string>
+    <string name="notes">Notes</string>
+    <string name="todo_app">Todo App</string>
+    <string name="add_a_task">Add a task +</string>
+</resources>
